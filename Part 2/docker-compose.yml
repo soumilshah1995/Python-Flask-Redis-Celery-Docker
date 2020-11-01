@@ -1,0 +1,26 @@
+version: "3.7"
+services:
+
+  flask_app:
+    build: './flask_app'
+    ports:
+      - "5000:5000"
+    depends_on:
+      - rabbit
+
+  rabbit:
+    hostname: rabbit
+    image: "rabbitmq:3-management"
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=mypass
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+
+  simple_worker:
+    build: './simple_worker'
+    user: nobody
+    depends_on:
+      - rabbit
+      - flask_app
