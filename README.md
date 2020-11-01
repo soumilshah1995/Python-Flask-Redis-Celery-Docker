@@ -6,3 +6,5 @@ Learn how to use Python with Flask Redis and Celery and pack everything into Doc
 #### Tutorials 
 * Basic Understanding concepts #1 : https://www.youtube.com/watch?v=ybftbk_l6iU&list=PLL2hlSFBmWwyFJrwLGY-Ja9MpMe4TVkZC&index=2
 * Basic Understanding concepts #2: https://www.youtube.com/watch?v=69vpylT2Dts&list=PLL2hlSFBmWwyFJrwLGY-Ja9MpMe4TVkZC&index=1
+* Redis Celery : https://www.youtube.com/watch?v=9ho3LxAijWg&t=1317s
+* Rabbit MQ Celery: https://www.youtube.com/watch?v=x98-JfEV7IA
