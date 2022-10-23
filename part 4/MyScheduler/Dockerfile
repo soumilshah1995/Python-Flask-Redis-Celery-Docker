@@ -2,7 +2,7 @@ FROM python:3.4
 WORKDIR /usr/src/app
 
 # install supervisord
-RUN apt-get update && apt-get install -y supervisor
+RUN apt-get update && apt-get install -y supervisord
 
 # copy requirements and install (so that changes to files do not mean rebuild cannot be cached)
 COPY requirements.txt /usr/src/app
